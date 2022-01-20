@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"/>
+    <title>Encriptador-Desencriptador</title>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="logo-alura">
+    </header>
+
+    <main class="container wrapper-global">
+        
+        <div class="wrapper-1">
+           
+            <textarea class="text-area" placeholder="ingrese su texto aqui"> </textarea>
+            <div class="sub-wp">
+                <div class="warning">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m17.284 3.707 1.412-1.416 3.01 3-1.413 1.417zm-10.586 0-2.99 2.999L2.29 5.294l2.99-3zM12 4c-4.879 0-9 4.121-9 9s4.121 9 9 9 9-4.121 9-9-4.121-9-9-9zm1 14h-2v-2h2v2zm0-4h-2V8h2v6z"></path></svg>
+                    <p class = " text-warning">Sólo letras minúsculas y sin acentos</p>
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn active btn-encriptar">Encriptar</button>
+                    <button class="btn btn-desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-2">
+            <textarea class="text-resultado d-none" readonly></textarea>
+            <button class = "btn btn-copy d-none">Copiar</button>
+            <div class = "content-image">
+                    <img src="munieco.png" alt="foto-munieco"/>        
+                    <p class="text-alert">
+                        <span class = "text-alert-style">Ningún mensaje fue encontrado</span>
+                        <br/>
+                        Ingrese el texto que desees encriptar o desencriptar
+                    </p>
+            </div>
+        </div>
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body{
+    background-color: #f3f5fc;
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.wrapper-global{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 20px;
+    
+}
+
+/********** GENERALES **********/
+p{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+.text-area, .text-resultado{
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    resize: none;
+    text-transform: lowercase;
+    padding: 5px;
+    outline: none;
+}
+.wrapper-1, .wrapper-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    width: 90%;
+    margin: 0 auto;
+}
+/********** WRAPPER-1 **********/
+.wrapper-1{
+    width: 80%;
+    height: 100%;
+
+}
+.text-area{
+    width: 100%;
+    height: 70%;
+    background: #f3f5fc;
+    
+}
+.text-resultado, .content-image{
+    width: 100%;
+    height: 85%;
+}
+.warning{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.text-warning{
+    margin-left: 10px;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.buttons .btn{
+    width: 45%;
+}
+.buttons .active{
+    background-color: #1C6EA4;
+    color: #fff;
+}
+
+/********** WRAPPER-2 **********/
+.wrapper-2{
+    min-height: 80vh;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn{
+    color: #1C6EA4;
+    border: 3px solid #1C6EA4;
+    border-radius: 27px;
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;   
+}
+.btn-copy:hover{
+    background-color: #1C6EA4;
+    color: #fff;
+}
+
+
+/************* CUANDO EL TEXTAREA DE WRAPPER-1 ESTA VACIO **********************/
+
+.content-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text-alert{
+    color: #44494f;
+    font-size: 20px;
+    
+}
+.d-none{
+    display: none;
+}
+.text-alert-style{   
+    font-weight: bold;
+}
+
+@media (max-width: 1024px){
+    .wrapper-global{
+        display: block;
+    }
+    .wrapper-1{
+        height: 100vh;
+    }
+    .wrapper-2{
+        height: 50vh;
+    }
+    
+}   
